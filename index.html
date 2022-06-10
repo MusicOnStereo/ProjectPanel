@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="login">
+		<form id="loginForm" onsubmit="return false;">
+			<p>User Token: 
+				<input type="text" name="loginToken" /> 
+				<button class="infobutton" id="loginInfobutton">
+					<img src="info.png" style="width:16px"/>
+				</button>
+			</p>
+			<button id="loginSubmit">Login</button>
+		</form>
+	</div> 
+	<div id="loginInfopanel" class="infopanel">
+		<p>This program requires your CSRF Token to fetch your unshared projects.</p>
+		<h2>CSRF Tokens</h2>
+		<p><abbr title="cross-site request forgery">CSRF</abbr> tokens are pieces of data sent from the server that verify identities on Scratch. CSRF tokens are tied to their respective accounts, and actions performed by an account are verified by its CSRF token. <strong>It is important these CSRF tokens are kept secret, since with an exposed CSRF token you are vulnerable to a CSRF attack.</strong></p>
+		<p>This program is run <em>locally</em>, and your CSRF token isn't shared outside your device when using this program.</p>
+		<h2>Fetching Your CSRF Token</h2>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
